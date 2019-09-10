@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <title>Alias Game (K-12 Mode)</title>
+  
+  <!--<link rel="icon" href="img/favicon.ico">-->
+  <link rel="icon" href="img/dragon-head.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1">
+  
+  <link rel="stylesheet" href="css/alias.css">
+</head>
+<body>
+
+<header>
+  <div class="wrapper">
+    <div class="interface grow flex-css">
+      <div class="grow interface__unit flex-ccc">
+        <p class="interface__text">Players names/nicknames:</p>
+        <input class="interface__input long flex-ccc settings_names"
+               title="Type the players names separeted by white spase"
+               value="Lion Zebra Giraffe Panda Beaver Fox Crab Wolf" placeholder="Names">
+      </div>
+      <div class="grow interface__unit flex-ccc">
+        <p class="interface__text">Stand-up time (sec):</p>
+        <input class="interface__input flex-css settings_time"
+               title="Enter time in seconds" value="120" placeholder="Seconds">
+      </div>
+      <div class="grow interface__unit flex-ccc">
+        <p class="interface__text">SKIP time (sec):</p>
+        <input class="interface__input flex-ccc settings_skip"
+               title="Enter time in seconds" value="24" placeholder="Seconds">
+      </div>
+      
+      <div class="btn interface__btn flex-ccc grow btn_init">
+        Initialize the game!
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrapper" id="groot">
+    <div class="timer flex-ccc grow">
+      <div class="btn btn_next">
+        Finalize last round
+      </div>
+      <div class="btn btn_start">
+        Start round
+      </div>
+      <div class="btn btn_skip">
+        SKIP
+      </div>
+      <div class="grow"></div>
+      <div class="timer_main flex-ccc">
+        <div class="timer__minutes">00</div>
+        <div>:</div>
+        <div class="timer__seconds">00</div>
+        <div>.</div>
+        <div class="timer__milliseconds">0</div>
+      </div>
+      <div class="timer_secondary flex-ccc">
+        <div class="timer__seconds">00</div>
+        <div>.</div>
+        <div class="timer__milliseconds">0</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrapper">
+    <div class="results">
+      <div class="results__wrap flex-ccc">
+        <div class="btn btn_score">
+          All Scores
+        </div>
+        <div class="btn btn_results">
+          Show Results
+        </div>
+        <div class="btn btn_addSet">
+          One More Round
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/alias.js"></script>
+</body>
+</html>
